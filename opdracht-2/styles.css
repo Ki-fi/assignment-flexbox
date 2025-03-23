@@ -1,0 +1,119 @@
+/*GENERAL*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+.page-content {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 32px;
+    flex-basis: 0;
+    flex-grow: 24;
+}
+
+/*NAV*/
+
+.nav-bar {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 250px;
+    background-color: #f2f2f2;
+}
+
+.nav-bar > aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    gap: 24px;
+    padding: 24px;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-items {
+    list-style-type: none;
+}
+
+.menu-items > li > a {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.CTA {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.highlighted-item{
+    background-color: #e3e3e3;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    background-image: url("../assets/placeholder-image.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*MAIN*/
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 32px;
+}
+
+.training-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 260px;
+}
+
+.card-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    height: 16px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    color: white;
+    padding: 12px;
+    background-color: black;
+}
