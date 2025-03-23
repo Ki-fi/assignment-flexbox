@@ -21,20 +21,14 @@ body {
     flex-grow: 24;
 }
 
-/*TYPOGRAPHY*/
-
-
-
 /*NAV*/
 
 .nav-bar {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     flex-grow: 1;
     flex-shrink: 0;
     min-width: 250px;
-    background-color: lightgray;
+    background-color: #f2f2f2;
 }
 
 .nav-bar > aside {
@@ -43,26 +37,34 @@ body {
     justify-content: flex-start;
     flex-grow: 1;
     gap: 24px;
+    padding: 24px;
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .menu-items {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    list-style-type: none;
 }
 
 .menu-items > li > a {
     display: flex;
     flex-direction: row;
     gap: 12px;
-    list-style-type: none;
-}
-
-#highlighted-item a:active {
 }
 
 .CTA {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     margin-top: auto;
+}
+
+.highlighted-item{
+    background-color: #e3e3e3;
 }
 
 /*HEADER*/
@@ -95,10 +97,6 @@ main {
     max-width: 260px;
 }
 
-.training-image {
-
-}
-
 .card-elements {
     display: flex;
     flex-direction: row;
@@ -114,4 +112,8 @@ main {
 
 footer {
     margin-top: auto;
+    text-align: center;
+    color: white;
+    padding: 12px;
+    background-color: black;
 }
